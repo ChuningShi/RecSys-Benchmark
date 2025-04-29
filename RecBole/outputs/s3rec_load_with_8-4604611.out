@@ -1,0 +1,80 @@
+Saved item details to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/item_details.csv
+Saved item details to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/item_details.csv
+Saved item details to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/item_details.csv
+Saved item details to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/item_details.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/train_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/valid_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/test_interactions.csv
+Saved item details to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/item_details.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/train_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/valid_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/test_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/train_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/valid_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/test_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/train_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/valid_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/test_interactions.csv
+Saved item details to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/item_details.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/train_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/valid_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/test_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/train_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/valid_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/test_interactions.csv
+Saved item details to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/item_details.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/train_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/valid_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/test_interactions.csv
+Saved item details to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/item_details.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/train_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/valid_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/ml-1m/s3rec_ml-1m/test_interactions.csv
+Failed to load checkpoint at '/data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports/S3Rec-amzn-sports-1.pth'Failed to load checkpoint at '/data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports/S3Rec-amzn-sports-1.pth'Failed to load checkpoint at '/data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports/S3Rec-amzn-sports-1.pth'Failed to load checkpoint at '/data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports/S3Rec-amzn-sports-1.pth'Failed to load checkpoint at '/data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports/S3Rec-amzn-sports-1.pth'Failed to load checkpoint at '/data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports/S3Rec-amzn-sports-1.pth'Failed to load checkpoint at '/data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports/S3Rec-amzn-sports-1.pth'
+
+
+
+
+
+
+  exists: True, size: 122555242  exists: True, size: 122555242  exists: True, size: 122555242
+  exists: True, size: 122555242  exists: True, size: 122555242Failed to load checkpoint at '/data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports/S3Rec-amzn-sports-1.pth'
+
+
+  exists: True, size: 122555242
+  exists: True, size: 122555242
+
+  first 16 raw bytes: b'PK\x03\x04\x00\x00\x08\x08\x00\x00\x00\x00\x00\x00\x00\x00'  first 16 raw bytes: b'PK\x03\x04\x00\x00\x08\x08\x00\x00\x00\x00\x00\x00\x00\x00'  first 16 raw bytes: b'PK\x03\x04\x00\x00\x08\x08\x00\x00\x00\x00\x00\x00\x00\x00'  first 16 raw bytes: b'PK\x03\x04\x00\x00\x08\x08\x00\x00\x00\x00\x00\x00\x00\x00'  first 16 raw bytes: b'PK\x03\x04\x00\x00\x08\x08\x00\x00\x00\x00\x00\x00\x00\x00'
+
+
+  first 16 raw bytes: b'PK\x03\x04\x00\x00\x08\x08\x00\x00\x00\x00\x00\x00\x00\x00'  first 16 raw bytes: b'PK\x03\x04\x00\x00\x08\x08\x00\x00\x00\x00\x00\x00\x00\x00'
+
+
+
+
+  exists: True, size: 122555242
+  first 16 raw bytes: b'PK\x03\x04\x00\x00\x08\x08\x00\x00\x00\x00\x00\x00\x00\x00'
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33ms3rec_ml-1m[0m at: [34mhttps://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/b8r90mei[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250420_172437-b8r90mei/logs[0m
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33ms3rec_ml-1m[0m at: [34mhttps://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/aixdyh4v[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250420_172437-aixdyh4v/logs[0m
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33ms3rec_ml-1m[0m at: [34mhttps://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/s0i267za[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250420_172437-s0i267za/logs[0m
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33ms3rec_ml-1m[0m at: [34mhttps://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/h5vgbwa0[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250420_172437-h5vgbwa0/logs[0m
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33ms3rec_ml-1m[0m at: [34mhttps://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/ko9ad9bl[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250420_172437-ko9ad9bl/logs[0m
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33ms3rec_ml-1m[0m at: [34mhttps://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/wueqe8sz[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250420_172437-wueqe8sz/logs[0m
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33ms3rec_ml-1m[0m at: [34mhttps://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/8jnegw22[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250420_172437-8jnegw22/logs[0m
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33ms3rec_ml-1m[0m at: [34mhttps://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/m728rb15[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250420_172437-m728rb15/logs[0m

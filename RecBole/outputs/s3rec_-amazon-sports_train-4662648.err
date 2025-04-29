@@ -1,0 +1,52 @@
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+[rank3]:[W425 20:44:16.544073218 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank2]:[W425 20:44:16.714480396 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank7]:[W425 20:44:17.731703487 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank6]:[W425 20:44:17.769657613 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W0425 20:44:17.077000 568064 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 568093 via signal SIGTERM
+W0425 20:44:17.078000 568064 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 568094 via signal SIGTERM
+W0425 20:44:17.078000 568064 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 568095 via signal SIGTERM
+W0425 20:44:17.078000 568064 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 568097 via signal SIGTERM
+W0425 20:44:17.079000 568064 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 568098 via signal SIGTERM
+W0425 20:44:17.079000 568064 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 568099 via signal SIGTERM
+W0425 20:44:17.079000 568064 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 568100 via signal SIGTERM
+Traceback (most recent call last):
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/run_recbole.py", line 49, in <module>
+    run(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/quick_start/quick_start.py", line 180, in run
+    mp.spawn(
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 340, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 296, in start_processes
+    while not context.join():
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 215, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 3 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 90, in _wrap
+    fn(i, *args)
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/quick_start/quick_start.py", line 312, in run_recboles
+    run_recbole(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/quick_start/quick_start.py", line 212, in run_recbole
+    config = Config(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/config/configurator.py", line 97, in __init__
+    self._init_device()
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/config/configurator.py", line 523, in _init_device
+    torch.cuda.set_device(self.final_config_dict["local_rank"])
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/cuda/__init__.py", line 476, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+

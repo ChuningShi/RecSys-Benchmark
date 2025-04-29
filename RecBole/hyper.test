@@ -1,0 +1,4 @@
+learning_rate choice [0.001, 0.0005, 0.0001]
+n_heads choice [2,4]
+n_layers choice [2,4]
+hidden_size choice [64, 128]

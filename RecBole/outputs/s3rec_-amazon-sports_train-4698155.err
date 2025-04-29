@@ -1,0 +1,451 @@
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 8 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+28 Apr 16:22    INFO  ['run_recbole.py', '--model', 'S3Rec', '--dataset', 'amzn-sports', '--exp_name', 's3rec_amzn-sports', '--nproc', '8', '--config_files', 'configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml']
+28 Apr 16:22    INFO  
+General Hyper Parameters:
+gpu_id = 0,1,2,3,4,5,6,7
+use_gpu = True
+seed = 42
+state = INFO
+reproducibility = True
+data_path = /data/group_data/cx_group/REC/data/tmp/amzn-sports
+checkpoint_dir = /data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports
+show_progress = True
+save_dataset = False
+dataset_save_path = None
+save_dataloaders = False
+dataloaders_save_path = None
+log_wandb = True
+
+Training Hyper Parameters:
+epochs = 50
+train_batch_size = 32768
+learner = adam
+learning_rate = 0.001
+train_neg_sample_args = {'distribution': 'none', 'sample_num': 'none', 'alpha': 'none', 'dynamic': False, 'candidate_num': 0}
+eval_step = 1
+stopping_step = 50
+clip_grad_norm = None
+weight_decay = 0.0
+loss_decimal_place = 4
+
+Evaluation Hyper Parameters:
+eval_args = {'split': {'LS': 'valid_and_test'}, 'order': 'TO', 'group_by': 'user', 'mode': {'valid': 'full', 'test': 'full'}}
+repeatable = True
+metrics = ['Recall', 'NDCG', 'Hit']
+topk = [1, 5, 10, 20, 50, 100]
+valid_metric = NDCG@10
+valid_metric_bigger = True
+eval_batch_size = 1024
+metric_decimal_place = 4
+
+Dataset Hyper Parameters:
+field_separator = 	
+seq_separator =  
+USER_ID_FIELD = user_id
+ITEM_ID_FIELD = item_id
+RATING_FIELD = rating
+TIME_FIELD = timestamp
+seq_len = None
+LABEL_FIELD = label
+threshold = None
+NEG_PREFIX = neg_
+load_col = {'inter': ['user_id', 'item_id', 'rating', 'timestamp'], 'item': ['item_id', 'categories', 'average_rating', 'rating_number']}
+unload_col = None
+unused_col = None
+additional_feat_suffix = None
+rm_dup_inter = None
+val_interval = None
+filter_inter_by_user_or_item = True
+user_inter_num_interval = [1,inf)
+item_inter_num_interval = [1,inf)
+alias_of_user_id = None
+alias_of_item_id = None
+alias_of_entity_id = None
+alias_of_relation_id = None
+preload_weight = None
+normalize_field = None
+normalize_all = None
+ITEM_LIST_LENGTH_FIELD = item_length
+LIST_SUFFIX = _list
+MAX_ITEM_LIST_LENGTH = 50
+POSITION_FIELD = position_id
+HEAD_ENTITY_ID_FIELD = head_id
+TAIL_ENTITY_ID_FIELD = tail_id
+RELATION_ID_FIELD = relation_id
+ENTITY_ID_FIELD = entity_id
+benchmark_filename = None
+
+Other Hyper Parameters: 
+worker = 0
+wandb_project = RecSys-Benchmark
+shuffle = True
+require_pow = False
+enable_amp = False
+enable_scaler = False
+transform = None
+n_layers = 2
+n_heads = 2
+hidden_size = 64
+inner_size = 64
+hidden_dropout_prob = 0.5
+attn_dropout_prob = 0.5
+hidden_act = gelu
+layer_norm_eps = 1e-12
+initializer_range = 0.02
+item_attribute = categories
+mask_ratio = 0.2
+aap_weight = 1.0
+mip_weight = 0.2
+map_weight = 1.0
+sp_weight = 0.5
+train_stage = pretrain
+pretrain_epochs = 50
+save_step = 1
+pre_model_path = 
+loss_type = CE
+numerical_features = []
+discretization = None
+kg_reverse_r = False
+entity_kg_num_interval = [0,inf)
+relation_kg_num_interval = [0,inf)
+MODEL_TYPE = ModelType.SEQUENTIAL
+world_size = 8
+ip = localhost
+port = 5678
+nproc = 8
+offset = 0
+local_rank = 0
+exp_name = s3rec_amzn-sports
+MODEL_INPUT_TYPE = InputType.POINTWISE
+eval_type = EvaluatorType.RANKING
+device = cuda:0
+single_spec = False
+valid_neg_sample_args = {'distribution': 'uniform', 'sample_num': 'none'}
+test_neg_sample_args = {'distribution': 'uniform', 'sample_num': 'none'}
+
+
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+28 Apr 16:23    INFO  amzn-sports
+The number of users: 202642
+Average actions of users: 4.934830562423202
+The number of items: 337852
+Average actions of items: 2.9598817230080714
+The number of inters: 999999
+The sparsity of the dataset: 99.99853935859194%
+Remain Fields: ['user_id', 'item_id', 'rating', 'timestamp', 'categories', 'average_rating', 'rating_number']
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+28 Apr 16:24    INFO  [Training]: train_batch_size = [32768] train_neg_sample_args: [{'distribution': 'none', 'sample_num': 'none', 'alpha': 'none', 'dynamic': False, 'candidate_num': 0}]
+28 Apr 16:24    INFO  [Evaluation]: eval_batch_size = [1024] eval_args: [{'split': {'LS': 'valid_and_test'}, 'order': 'TO', 'group_by': 'user', 'mode': {'valid': 'full', 'test': 'full'}}]
+28 Apr 16:24    INFO  Saving interaction data and item details to CSV...
+28 Apr 16:24    INFO  Item details saved to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/item_details.csv
+28 Apr 16:24    INFO  Train interactions saved to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/train_interactions.csv
+28 Apr 16:24    INFO  Validation interactions saved to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/valid_interactions.csv
+28 Apr 16:24    INFO  Test interactions saved to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/test_interactions.csv
+28 Apr 16:24    INFO  S3Rec(
+  (item_embedding): Embedding(337853, 64, padding_idx=0)
+  (position_embedding): Embedding(50, 64)
+  (feature_embedding): Embedding(2365, 64, padding_idx=0)
+  (trm_encoder): TransformerEncoder(
+    (layer): ModuleList(
+      (0-1): 2 x TransformerLayer(
+        (multi_head_attention): MultiHeadAttention(
+          (query): Linear(in_features=64, out_features=64, bias=True)
+          (key): Linear(in_features=64, out_features=64, bias=True)
+          (value): Linear(in_features=64, out_features=64, bias=True)
+          (softmax): Softmax(dim=-1)
+          (attn_dropout): Dropout(p=0.5, inplace=False)
+          (dense): Linear(in_features=64, out_features=64, bias=True)
+          (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+          (out_dropout): Dropout(p=0.5, inplace=False)
+        )
+        (feed_forward): FeedForward(
+          (dense_1): Linear(in_features=64, out_features=64, bias=True)
+          (dense_2): Linear(in_features=64, out_features=64, bias=True)
+          (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.5, inplace=False)
+        )
+      )
+    )
+  )
+  (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (aap_norm): Linear(in_features=64, out_features=64, bias=True)
+  (mip_norm): Linear(in_features=64, out_features=64, bias=True)
+  (map_norm): Linear(in_features=64, out_features=64, bias=True)
+  (sp_norm): Linear(in_features=64, out_features=64, bias=True)
+  (loss_fct): BCEWithLogitsLoss()
+)
+Trainable parameters: 21844352
+28 Apr 16:24    INFO  FLOPs: 2525864.0
+28 Apr 16:25    ERROR  git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: not a git repository: /data/user_data/chunings/RecSys-Benchmark/RecBole/../.git/modules/RecBole'28 Apr 16:25    ERROR  git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: not a git repository: /data/user_data/chunings/RecSys-Benchmark/RecBole/../.git/modules/RecBole'28 Apr 16:25    ERROR  git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: not a git repository: /data/user_data/chunings/RecSys-Benchmark/RecBole/../.git/modules/RecBole'
+28 Apr 16:25    ERROR  git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: not a git repository: /data/user_data/chunings/RecSys-Benchmark/RecBole/../.git/modules/RecBole'
+
+
+28 Apr 16:25    ERROR  git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: not a git repository: /data/user_data/chunings/RecSys-Benchmark/RecBole/../.git/modules/RecBole'28 Apr 16:25    ERROR  git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: not a git repository: /data/user_data/chunings/RecSys-Benchmark/RecBole/../.git/modules/RecBole'28 Apr 16:25    ERROR  git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: not a git repository: /data/user_data/chunings/RecSys-Benchmark/RecBole/../.git/modules/RecBole'28 Apr 16:25    ERROR  git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: not a git repository: /data/user_data/chunings/RecSys-Benchmark/RecBole/../.git/modules/RecBole'
+
+
+
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: chunings (chunings-carnegie-mellon-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: chunings (chunings-carnegie-mellon-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: chunings (chunings-carnegie-mellon-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: chunings (chunings-carnegie-mellon-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: chunings (chunings-carnegie-mellon-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: chunings (chunings-carnegie-mellon-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: chunings (chunings-carnegie-mellon-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: chunings (chunings-carnegie-mellon-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.8
+wandb: Run data is saved locally in /data/user_data/chunings/RecSys-Benchmark/RecBole/wandb/run-20250428_162504-v0ofemf5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run s3rec_amzn-sports
+wandb: ⭐️ View project at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark
+wandb: 🚀 View run at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/v0ofemf5
+wandb: Tracking run with wandb version 0.19.8
+wandb: Run data is saved locally in /data/user_data/chunings/RecSys-Benchmark/RecBole/wandb/run-20250428_162504-tgfpu9c4
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run s3rec_amzn-sports
+wandb: ⭐️ View project at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark
+wandb: 🚀 View run at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/tgfpu9c4
+wandb: Tracking run with wandb version 0.19.8
+wandb: Run data is saved locally in /data/user_data/chunings/RecSys-Benchmark/RecBole/wandb/run-20250428_162504-49iiwum4
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run s3rec_amzn-sports
+wandb: ⭐️ View project at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark
+wandb: 🚀 View run at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/49iiwum4
+wandb: Tracking run with wandb version 0.19.8
+wandb: Run data is saved locally in /data/user_data/chunings/RecSys-Benchmark/RecBole/wandb/run-20250428_162504-6nj8fx2n
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run s3rec_amzn-sports
+wandb: ⭐️ View project at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark
+wandb: 🚀 View run at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/6nj8fx2n
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py:235: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=self.enable_scaler)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py:235: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=self.enable_scaler)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py:235: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=self.enable_scaler)
+wandb: Tracking run with wandb version 0.19.8
+wandb: Run data is saved locally in /data/user_data/chunings/RecSys-Benchmark/RecBole/wandb/run-20250428_162504-shkr8i6u
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run s3rec_amzn-sports
+wandb: ⭐️ View project at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark
+wandb: 🚀 View run at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/shkr8i6u
+wandb: Tracking run with wandb version 0.19.8
+wandb: Run data is saved locally in /data/user_data/chunings/RecSys-Benchmark/RecBole/wandb/run-20250428_162504-rpjj1sdv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run s3rec_amzn-sports
+wandb: ⭐️ View project at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark
+wandb: 🚀 View run at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/rpjj1sdv
+wandb: Tracking run with wandb version 0.19.8
+wandb: Run data is saved locally in /data/user_data/chunings/RecSys-Benchmark/RecBole/wandb/run-20250428_162504-1x2kd8k4
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run s3rec_amzn-sports
+wandb: ⭐️ View project at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark
+wandb: 🚀 View run at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/1x2kd8k4
+wandb: Tracking run with wandb version 0.19.8
+wandb: Run data is saved locally in /data/user_data/chunings/RecSys-Benchmark/RecBole/wandb/run-20250428_162504-vhbd7k69
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run s3rec_amzn-sports
+wandb: ⭐️ View project at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark
+wandb: 🚀 View run at https://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/vhbd7k69
+28 Apr 16:25    INFO  No pretrain checkpoint found, starting from scratch.
+Train     0:   0%|                                                           | 0/20 [00:00<?, ?it/s]/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py:235: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=self.enable_scaler)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py:235: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=self.enable_scaler)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py:235: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=self.enable_scaler)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py:235: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=self.enable_scaler)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py:235: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=self.enable_scaler)
+Train     0:   0%|                                                           | 0/20 [01:29<?, ?it/s]
+[rank0]:[W428 16:26:37.629403236 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W0428 16:26:38.973000 3891017 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 3891047 via signal SIGTERM
+W0428 16:26:38.975000 3891017 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 3891048 via signal SIGTERM
+W0428 16:26:38.975000 3891017 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 3891049 via signal SIGTERM
+W0428 16:26:38.976000 3891017 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 3891050 via signal SIGTERM
+W0428 16:26:38.976000 3891017 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 3891051 via signal SIGTERM
+W0428 16:26:38.982000 3891017 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 3891052 via signal SIGTERM
+W0428 16:26:38.983000 3891017 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 3891053 via signal SIGTERM
+Traceback (most recent call last):
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/run_recbole.py", line 49, in <module>
+    run(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/quick_start/quick_start.py", line 180, in run
+    mp.spawn(
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 340, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 296, in start_processes
+    while not context.join():
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 215, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 90, in _wrap
+    fn(i, *args)
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/quick_start/quick_start.py", line 312, in run_recboles
+    run_recbole(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/quick_start/quick_start.py", line 270, in run_recbole
+    best_valid_score, best_valid_result = trainer.fit(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py", line 962, in fit
+    return self.pretrain(train_data, verbose, show_progress)
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py", line 912, in pretrain
+    train_loss = self._train_epoch(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/trainer/trainer.py", line 245, in _train_epoch
+    losses = loss_func(interaction)
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/model/sequential_recommender/s3rec.py", line 419, in calculate_loss
+    loss = self.pretrain(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/model/sequential_recommender/s3rec.py", line 215, in pretrain
+    aap_loss = self.loss_fct(aap_score, features.view(-1, self.n_features).float())
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 821, in forward
+    return F.binary_cross_entropy_with_logits(
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/nn/functional.py", line 3643, in binary_cross_entropy_with_logits
+    return torch.binary_cross_entropy_with_logits(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.80 GiB. GPU 0 has a total capacity of 10.90 GiB of which 1.40 GiB is free. Including non-PyTorch memory, this process has 9.50 GiB memory in use. Of the allocated memory 9.13 GiB is allocated by PyTorch, and 152.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+

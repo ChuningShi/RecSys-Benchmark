@@ -1,0 +1,20 @@
+Saved item details to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/item_details.csv
+Saved item details to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/item_details.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/train_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/valid_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/train_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/test_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/valid_interactions.csv
+Saved interaction data to /data/user_data/chunings/RecSys-Benchmark/RecBole/data_split/amzn-sports/s3rec_amzn-sports/test_interactions.csv
+Failed to load checkpoint at '/data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports/S3Rec-amzn-sports-50.pth'Failed to load checkpoint at '/data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports/S3Rec-amzn-sports-50.pth'
+
+  exists: True, size: 122555426  exists: True, size: 122555426
+
+  first 16 raw bytes: b'PK\x03\x04\x00\x00\x08\x08\x00\x00\x00\x00\x00\x00\x00\x00'  first 16 raw bytes: b'PK\x03\x04\x00\x00\x08\x08\x00\x00\x00\x00\x00\x00\x00\x00'
+
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33ms3rec_amzn-sports[0m at: [34mhttps://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/spgo6gyu[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250420_182139-spgo6gyu/logs[0m
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33ms3rec_amzn-sports[0m at: [34mhttps://wandb.ai/chunings-carnegie-mellon-university/RecSys-Benchmark/runs/tl543wgo[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250420_182139-tl543wgo/logs[0m

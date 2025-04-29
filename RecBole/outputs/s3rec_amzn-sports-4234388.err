@@ -1,0 +1,298 @@
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 2 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 2 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+16 Feb 21:54    INFO  ['run_recbole.py', '--model', 'S3Rec', '--dataset', 'amzn-sports', '--exp_name', 's3rec_amzn-sports', '--nproc', '2', '--config_files', 'configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml']
+16 Feb 21:54    INFO  
+General Hyper Parameters:
+gpu_id = 0,1
+use_gpu = True
+seed = 42
+state = INFO
+reproducibility = True
+data_path = /data/group_data/cx_group/REC/data/amzn-sports
+checkpoint_dir = /data/group_data/cx_group/REC/checkpoints/s3rec_amzn-sports
+show_progress = True
+save_dataset = False
+dataset_save_path = None
+save_dataloaders = False
+dataloaders_save_path = None
+log_wandb = True
+
+Training Hyper Parameters:
+epochs = 100
+train_batch_size = 4096
+learner = adam
+learning_rate = 0.001
+train_neg_sample_args = {'distribution': 'none', 'sample_num': 'none', 'alpha': 'none', 'dynamic': False, 'candidate_num': 0}
+eval_step = 1
+stopping_step = 50
+clip_grad_norm = None
+weight_decay = 0.0
+loss_decimal_place = 4
+
+Evaluation Hyper Parameters:
+eval_args = {'split': {'LS': 'valid_and_test'}, 'order': 'TO', 'group_by': 'user', 'mode': {'valid': 'full', 'test': 'full'}}
+repeatable = True
+metrics = ['Recall', 'NDCG', 'Hit']
+topk = [1, 5, 10, 20, 50, 100]
+valid_metric = NDCG@10
+valid_metric_bigger = True
+eval_batch_size = 1024
+metric_decimal_place = 4
+
+Dataset Hyper Parameters:
+field_separator = 	
+seq_separator =  
+USER_ID_FIELD = user_id
+ITEM_ID_FIELD = item_id
+RATING_FIELD = rating
+TIME_FIELD = timestamp
+seq_len = None
+LABEL_FIELD = label
+threshold = None
+NEG_PREFIX = neg_
+load_col = {'inter': ['user_id', 'item_id', 'rating', 'timestamp'], 'item': ['item_id', 'categories', 'average_rating', 'rating_number']}
+unload_col = None
+unused_col = None
+additional_feat_suffix = None
+rm_dup_inter = None
+val_interval = None
+filter_inter_by_user_or_item = True
+user_inter_num_interval = [5,inf)
+item_inter_num_interval = [5,inf)
+alias_of_user_id = None
+alias_of_item_id = None
+alias_of_entity_id = None
+alias_of_relation_id = None
+preload_weight = None
+normalize_field = None
+normalize_all = None
+ITEM_LIST_LENGTH_FIELD = item_length
+LIST_SUFFIX = _list
+MAX_ITEM_LIST_LENGTH = 50
+POSITION_FIELD = position_id
+HEAD_ENTITY_ID_FIELD = head_id
+TAIL_ENTITY_ID_FIELD = tail_id
+RELATION_ID_FIELD = relation_id
+ENTITY_ID_FIELD = entity_id
+benchmark_filename = None
+
+Other Hyper Parameters: 
+worker = 2
+wandb_project = RecSys-Benchmark
+shuffle = True
+require_pow = False
+enable_amp = False
+enable_scaler = False
+transform = None
+n_layers = 2
+n_heads = 2
+hidden_size = 64
+inner_size = 64
+hidden_dropout_prob = 0.5
+attn_dropout_prob = 0.5
+hidden_act = gelu
+layer_norm_eps = 1e-12
+initializer_range = 0.02
+item_attribute = categories
+mask_ratio = 0.2
+aap_weight = 1.0
+mip_weight = 0.2
+map_weight = 1.0
+sp_weight = 0.5
+train_stage = pretrain
+pretrain_epochs = 100
+save_step = 20
+pre_model_path = 
+loss_type = CE
+numerical_features = []
+discretization = None
+kg_reverse_r = False
+entity_kg_num_interval = [0,inf)
+relation_kg_num_interval = [0,inf)
+MODEL_TYPE = ModelType.SEQUENTIAL
+world_size = 2
+ip = localhost
+port = 5678
+nproc = 2
+offset = 0
+local_rank = 0
+exp_name = s3rec_amzn-sports
+MODEL_INPUT_TYPE = InputType.POINTWISE
+eval_type = EvaluatorType.RANKING
+device = cuda:0
+single_spec = False
+valid_neg_sample_args = {'distribution': 'uniform', 'sample_num': 'none'}
+test_neg_sample_args = {'distribution': 'uniform', 'sample_num': 'none'}
+
+
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:501: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df[field].fillna(value="", inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:501: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df[field].fillna(value="", inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:1217: FutureWarning: using <built-in function len> in Series.agg cannot aggregate and has been deprecated. Use Series.transform to keep behavior unchanged.
+  split_point = np.cumsum(feat[field].agg(len))[:-1]
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+16 Feb 21:59    INFO  amzn-sports
+The number of users: 409773
+Average actions of users: 8.473053307693059
+The number of items: 156236
+Average actions of items: 22.223061413895735
+The number of inters: 3472020
+The sparsity of the dataset: 99.9945767731955%
+Remain Fields: ['user_id', 'item_id', 'rating', 'timestamp', 'categories', 'average_rating', 'rating_number']
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:1217: FutureWarning: using <built-in function len> in Series.agg cannot aggregate and has been deprecated. Use Series.transform to keep behavior unchanged.
+  split_point = np.cumsum(feat[field].agg(len))[:-1]
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+16 Feb 22:02    INFO  [Training]: train_batch_size = [4096] train_neg_sample_args: [{'distribution': 'none', 'sample_num': 'none', 'alpha': 'none', 'dynamic': False, 'candidate_num': 0}]
+16 Feb 22:02    INFO  [Evaluation]: eval_batch_size = [1024] eval_args: [{'split': {'LS': 'valid_and_test'}, 'order': 'TO', 'group_by': 'user', 'mode': {'valid': 'full', 'test': 'full'}}]
+16 Feb 22:02    INFO  S3Rec(
+  (item_embedding): Embedding(156237, 64, padding_idx=0)
+  (position_embedding): Embedding(50, 64)
+  (feature_embedding): Embedding(2693, 64, padding_idx=0)
+  (trm_encoder): TransformerEncoder(
+    (layer): ModuleList(
+      (0-1): 2 x TransformerLayer(
+        (multi_head_attention): MultiHeadAttention(
+          (query): Linear(in_features=64, out_features=64, bias=True)
+          (key): Linear(in_features=64, out_features=64, bias=True)
+          (value): Linear(in_features=64, out_features=64, bias=True)
+          (softmax): Softmax(dim=-1)
+          (attn_dropout): Dropout(p=0.5, inplace=False)
+          (dense): Linear(in_features=64, out_features=64, bias=True)
+          (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+          (out_dropout): Dropout(p=0.5, inplace=False)
+        )
+        (feed_forward): FeedForward(
+          (dense_1): Linear(in_features=64, out_features=64, bias=True)
+          (dense_2): Linear(in_features=64, out_features=64, bias=True)
+          (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.5, inplace=False)
+        )
+      )
+    )
+  )
+  (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (aap_norm): Linear(in_features=64, out_features=64, bias=True)
+  (mip_norm): Linear(in_features=64, out_features=64, bias=True)
+  (map_norm): Linear(in_features=64, out_features=64, bias=True)
+  (sp_norm): Linear(in_features=64, out_features=64, bias=True)
+  (loss_fct): BCEWithLogitsLoss()
+)
+Trainable parameters: 10241920
+16 Feb 22:02    INFO  FLOPs: 2525864.0
+[rank0]:[E216 22:12:09.080232121 ProcessGroupNCCL.cpp:629] [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=1, OpType=ALLGATHER, NumelIn=1, NumelOut=2, Timeout(ms)=600000) ran for 600086 milliseconds before timing out.
+[rank1]:[E216 22:12:09.080394610 ProcessGroupNCCL.cpp:629] [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=1, OpType=ALLGATHER, NumelIn=1, NumelOut=2, Timeout(ms)=600000) ran for 600086 milliseconds before timing out.
+[rank0]:[E216 22:12:09.083255644 ProcessGroupNCCL.cpp:2168] [PG ID 0 PG GUID 0(default_pg) Rank 0]  failure detected by watchdog at work sequence id: 1 PG status: last enqueued work: 1, last completed work: -1
+[rank0]:[E216 22:12:09.083276504 ProcessGroupNCCL.cpp:667] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+[rank0]:[E216 22:12:09.083283634 ProcessGroupNCCL.cpp:681] [Rank 0] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank0]:[E216 22:12:09.083289804 ProcessGroupNCCL.cpp:695] [Rank 0] To avoid data inconsistency, we are taking the entire process down.
+[rank1]:[E216 22:12:09.083415513 ProcessGroupNCCL.cpp:2168] [PG ID 0 PG GUID 0(default_pg) Rank 1]  failure detected by watchdog at work sequence id: 1 PG status: last enqueued work: 1, last completed work: -1
+[rank1]:[E216 22:12:09.083433363 ProcessGroupNCCL.cpp:667] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+[rank1]:[E216 22:12:09.083444923 ProcessGroupNCCL.cpp:681] [Rank 1] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank1]:[E216 22:12:09.083450443 ProcessGroupNCCL.cpp:695] [Rank 1] To avoid data inconsistency, we are taking the entire process down.
+[rank0]:[E216 22:12:09.085619713 ProcessGroupNCCL.cpp:1895] [PG ID 0 PG GUID 0(default_pg) Rank 0] Process group watchdog thread terminated with exception: [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=1, OpType=ALLGATHER, NumelIn=1, NumelOut=2, Timeout(ms)=600000) ran for 600086 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:632 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f058019e1b6 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x2b4 (0x7f05814e7c74 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x890 (0x7f05814e97d0 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f05814ea6ed in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f05ca5615c0 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f05e1489c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f05e150ec40 in /lib64/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG ID 0 PG GUID 0(default_pg) Rank 0] Process group watchdog thread terminated with exception: [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=1, OpType=ALLGATHER, NumelIn=1, NumelOut=2, Timeout(ms)=600000) ran for 600086 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:632 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f058019e1b6 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x2b4 (0x7f05814e7c74 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x890 (0x7f05814e97d0 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f05814ea6ed in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f05ca5615c0 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f05e1489c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f05e150ec40 in /lib64/libc.so.6)
+
+Exception raised from ncclCommWatchdog at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1901 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f058019e1b6 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0xe5c6fc (0x7f05811456fc in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: <unknown function> + 0x145c0 (0x7f05ca5615c0 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #3: <unknown function> + 0x89c02 (0x7f05e1489c02 in /lib64/libc.so.6)
+frame #4: <unknown function> + 0x10ec40 (0x7f05e150ec40 in /lib64/libc.so.6)
+
+[rank1]:[E216 22:12:09.087498607 ProcessGroupNCCL.cpp:1895] [PG ID 0 PG GUID 0(default_pg) Rank 1] Process group watchdog thread terminated with exception: [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=1, OpType=ALLGATHER, NumelIn=1, NumelOut=2, Timeout(ms)=600000) ran for 600086 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:632 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f6fa4f6d1b6 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x2b4 (0x7f6fa62b6c74 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x890 (0x7f6fa62b87d0 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f6fa62b96ed in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f6fef3305c0 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f7006289c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f700630ec40 in /lib64/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG ID 0 PG GUID 0(default_pg) Rank 1] Process group watchdog thread terminated with exception: [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=1, OpType=ALLGATHER, NumelIn=1, NumelOut=2, Timeout(ms)=600000) ran for 600086 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:632 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f6fa4f6d1b6 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x2b4 (0x7f6fa62b6c74 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0x890 (0x7f6fa62b87d0 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f6fa62b96ed in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x145c0 (0x7f6fef3305c0 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #5: <unknown function> + 0x89c02 (0x7f7006289c02 in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10ec40 (0x7f700630ec40 in /lib64/libc.so.6)
+
+Exception raised from ncclCommWatchdog at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1901 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f6fa4f6d1b6 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0xe5c6fc (0x7f6fa5f146fc in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: <unknown function> + 0x145c0 (0x7f6fef3305c0 in /home/chunings/.local/lib/python3.9/site-packages/torch/lib/libtorch.so)
+frame #3: <unknown function> + 0x89c02 (0x7f7006289c02 in /lib64/libc.so.6)
+frame #4: <unknown function> + 0x10ec40 (0x7f700630ec40 in /lib64/libc.so.6)
+
+W0216 22:12:10.311621 1164751 torch/multiprocessing/spawn.py:169] Terminating process 1164767 via signal SIGTERM
+Traceback (most recent call last):
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/run_recbole.py", line 49, in <module>
+    run(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/quick_start/quick_start.py", line 85, in run
+    mp.spawn(
+  File "/home/chunings/.local/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 340, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+  File "/home/chunings/.local/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 296, in start_processes
+    while not context.join():
+  File "/home/chunings/.local/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 196, in join
+    raise ProcessExitedException(
+torch.multiprocessing.spawn.ProcessExitedException: process 0 terminated with signal SIGABRT

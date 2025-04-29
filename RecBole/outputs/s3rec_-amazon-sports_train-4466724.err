@@ -1,0 +1,40 @@
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 2 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+command line args [--model S3Rec --dataset amzn-sports --exp_name s3rec_amzn-sports --nproc 2 --config_files configs/models/S3Rec.yaml configs/datasets/amzn.yaml configs/eval.yaml] will not be used in RecBole
+W0327 18:29:58.181000 3465661 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 3465695 via signal SIGTERM
+Traceback (most recent call last):
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/run_recbole.py", line 49, in <module>
+    run(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/quick_start/quick_start.py", line 84, in run
+    mp.spawn(
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 340, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 296, in start_processes
+    while not context.join():
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 215, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/multiprocessing/spawn.py", line 90, in _wrap
+    fn(i, *args)
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/quick_start/quick_start.py", line 192, in run_recboles
+    run_recbole(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/quick_start/quick_start.py", line 116, in run_recbole
+    config = Config(
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/config/configurator.py", line 97, in __init__
+    self._init_device()
+  File "/data/user_data/chunings/RecSys-Benchmark/RecBole/recbole/config/configurator.py", line 509, in _init_device
+    torch.distributed.init_process_group(
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+    return func(*args, **kwargs)
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 95, in wrapper
+    func_return = func(*args, **kwargs)
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1714, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/distributed/rendezvous.py", line 226, in _tcp_rendezvous_handler
+    store = _create_c10d_store(
+  File "/home/chunings/miniconda3/envs/recsys_ben/lib/python3.10/site-packages/torch/distributed/rendezvous.py", line 194, in _create_c10d_store
+    return TCPStore(
+RuntimeError: The server socket has failed to listen on any local network address. port: 5678, useIpv6: 0, code: -98, name: EADDRINUSE, message: address already in use
+
